@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f1ea">
+  <script>
+    // The intro plays once per browser session (add ?intro to the URL to replay it).
+    (function () {
+      var d = document.documentElement, seen = false;
+      d.classList.add('js');
+      try { seen = sessionStorage.getItem('tc-intro') === '1'; sessionStorage.setItem('tc-intro', '1'); } catch (e) {}
+      if (/[?&]intro\b/.test(location.search)) seen = false;
+      if (seen || matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('no-intro');
+    })();
+  </script>
+  <title>Tress Cafe · Salon &amp; Make-up Studio, VIP Road Zirakpur</title>
+  <meta name="description" content="Tress Cafe is an exclusively Schwarzkopf Professional salon on VIP Road, Zirakpur — hair cuts, colour, smoothening, skin and bridal make-up. Call +91 90566 50011.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Tress Cafe",
+    "image": "images/interior.jpg",
+    "telephone": "+91-90566-50011",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "SCO 12, Block B, High Street, VIP Road",
+      "addressLocality": "Zirakpur",
+      "addressRegion": "Punjab",
+      "postalCode": "140603",
+      "addressCountry": "IN"
+    },
+    "openingHours": "Mo-Su 09:00-21:00",
+    "sameAs": [
+      "https://www.instagram.com/tresscafe_salon_zirakpur/",
+      "https://www.facebook.com/www.Tresscafe/"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <div class="intro" aria-hidden="true">
+    <div class="intro__inner">
+      <div class="intro__mark"><span style="--i:0">T</span><span style="--i:1">r</span><span style="--i:2">e</span><span style="--i:3">s</span><span style="--i:4">s</span><span class="sp" style="--i:5"> </span><span style="--i:6">C</span><span style="--i:7">a</span><span style="--i:8">f</span><span style="--i:9">é</span></div>
+      <div class="intro__line"></div>
+      <div class="intro__tag">Salon &amp; make-up studio · Zirakpur</div>
+    </div>
+  </div>
+
+  <header class="site-header wrap">
+    <nav aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#studio">Studio</a>
+      <a href="#reviews">Reviews</a>
+    </nav>
+    <a class="logo" href="/" aria-label="Tress Cafe — home">Tress Café</a>
+    <div class="header-actions">
+      <a href="#visit">Visit</a>
+      <a class="btn btn--outline" href="tel:+919056650011">Book appointment</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero__copy">
+        <div class="eyebrow hero__eyebrow">Salon &amp; make-up studio · Zirakpur</div>
+        <h1><span class="line">Quiet craft,</span><span class="line indent"><em>considered</em></span><span class="line">cuts.</span></h1>
+        <div class="hero__cta">
+          <p>Cuts, colour, smoothening, skin and bridal make-up — on VIP Road, with Schwarzkopf Professional in every chair.</p>
+          <a class="btn btn--mocha" href="tel:+919056650011">Book a visit</a>
+        </div>
+      </div>
+      <div class="hero__media">
+        <img class="hero__image" src="images/interior.jpg" width="609" height="812" alt="Inside Tress Cafe: marble reception, teal sofa and backlit round mirrors at the styling stations">
+        <div class="badge"><small>Exclusively</small><strong>Schwarzkopf</strong><small>Professional</small></div>
+      </div>
+    </section>
+
+    <section class="mocha" id="services" aria-labelledby="menu-title">
+      <div class="ribbon-row wrap">
+        <ul class="ribbon" aria-label="What we do">
+          <li>Cut</li><li>Colour</li><li>Care</li><li>Bridal</li>
+        </ul>
+        <div></div>
+      </div>
+
+      <div class="menu wrap">
+        <div data-reveal class="menu__intro">
+          <div class="eyebrow">01 — The menu</div>
+          <h2 id="menu-title">Services,<br>done <em>properly.</em></h2>
+          <p>Every appointment begins with a consultation. Final prices depend on hair length and the products used.</p>
+          <img class="menu__detail" src="images/schwarzkopf-desk.jpg" width="773" height="580" alt="Schwarzkopf Professional sign at the Tress Cafe front desk" loading="lazy">
+        </div>
+        <!-- Prices: only the make-up rate is published (WedMeGood). Fill the rest from the salon's own rate card. -->
+        <ol data-reveal class="menu__list">
+          <li class="menu__item"><span class="menu__num">i.</span><span class="menu__name">Haircut &amp; styling</span><span class="menu__time">Women · Men</span><span class="menu__price">on consult</span></li>
+          <li class="menu__item"><span class="menu__num">ii.</span><span class="menu__name">Global colour &amp; highlights</span><span class="menu__time">Schwarzkopf</span><span class="menu__price">on consult</span></li>
+          <li class="menu__item"><span class="menu__num">iii.</span><span class="menu__name">Smoothening, keratin &amp; rebonding</span><span class="menu__time">Treatment</span><span class="menu__price">on consult</span></li>
+          <li class="menu__item"><span class="menu__num">iv.</span><span class="menu__name">Party &amp; bridal make-up</span><span class="menu__time">Saree draping</span><span class="menu__price">from ₹1,500</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="team wrap" id="studio" aria-labelledby="studio-title">
+      <div data-reveal class="team__head">
+        <div class="eyebrow">02 — The studio</div>
+        <h2 id="studio-title">Inside <em>the café.</em></h2>
+      </div>
+      <div class="team__grid">
+        <figure data-reveal class="stylist">
+          <img class="arch" src="images/reception.jpg" width="960" height="720" alt="Tress Cafe reception with Schwarzkopf product shelves" loading="lazy" style="object-position:62% center">
+          <figcaption><span class="stylist__name">The front desk</span><span class="stylist__role">Walk-ins welcome</span></figcaption>
+        </figure>
+        <figure data-reveal class="stylist stylist--tall">
+          <img class="arch" src="images/balayage.webp" width="625" height="835" alt="Soft brunette balayage with loose waves, finished at Tress Cafe" loading="lazy">
+          <figcaption><span class="stylist__name">Lived-in balayage</span><span class="stylist__role">Recent work</span></figcaption>
+        </figure>
+        <figure data-reveal class="stylist">
+          <img class="arch" src="images/interior.jpg" width="609" height="812" alt="Styling stations with round backlit mirrors" loading="lazy" style="object-position:80% 38%">
+          <figcaption><span class="stylist__name">The floor</span><span class="stylist__role">Hair · Skin · Make-up</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews" aria-labelledby="reviews-title">
+      <div data-reveal class="reviews__head wrap">
+        <div class="eyebrow">03 — Kind words</div>
+        <h2 id="reviews-title">Overheard <em>at the mirror.</em></h2>
+        <a class="reviews__all" href="https://www.google.com/maps/search/?api=1&amp;query=Tress+Cafe+SCO+12+Block+B+High+Street+VIP+Road+Zirakpur" target="_blank" rel="noopener">All reviews on Google ↗</a>
+      </div>
+      <!--
+        SAMPLE COPY — not real reviews. Before this goes live, paste real Google reviews
+        (with the reviewer's first name + initial) into each .review and delete the
+        .review__sample captions. Publishing invented reviews is not allowed.
+        The track is duplicated in JS for the seamless loop; edit only this list.
+      -->
+      <div class="reviews__viewport">
+        <ul class="reviews__track">
+          <li class="review"><p>“Clean, hygienic and genuinely calm. The stylist listened before she picked up the scissors.”</p><span class="review__meta"><span class="review__stars" aria-label="5 out of 5">★★★★★</span><span class="review__sample">Sample — replace with Google review</span></span></li>
+          <li class="review"><p>“My balayage came out exactly like the reference picture, and it's grown out softly.”</p><span class="review__meta"><span class="review__stars" aria-label="5 out of 5">★★★★★</span><span class="review__sample">Sample — replace with Google review</span></span></li>
+          <li class="review"><p>“Did my engagement make-up and my mother's too. Stayed perfect the whole evening.”</p><span class="review__meta"><span class="review__stars" aria-label="5 out of 5">★★★★★</span><span class="review__sample">Sample — replace with Google review</span></span></li>
+          <li class="review"><p>“Polite staff, good hospitality, no rush. I've been coming back every month.”</p><span class="review__meta"><span class="review__stars" aria-label="5 out of 5">★★★★★</span><span class="review__sample">Sample — replace with Google review</span></span></li>
+          <li class="review"><p>“Keratin was done with proper Schwarzkopf products — the frizz is finally gone.”</p><span class="review__meta"><span class="review__stars" aria-label="5 out of 5">★★★★★</span><span class="review__sample">Sample — replace with Google review</span></span></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="booking-wrap wrap" id="visit">
+      <section class="booking" id="book" data-reveal aria-labelledby="book-title">
+        <div class="booking__copy">
+          <h2 id="book-title">Your chair<br>is <em>waiting.</em></h2>
+          <div class="booking__cta">
+            <div class="booking__buttons">
+              <a class="btn btn--ink" href="tel:+919056650011">Call +91 90566 50011</a>
+              <a class="booking__wa" href="https://wa.me/919056650011" target="_blank" rel="noopener">or WhatsApp us</a>
+            </div>
+            <address>Open daily · 9:00–21:00<br>SCO 12, Block B, High Street<br>VIP Road, Zirakpur 140603</address>
+          </div>
+        </div>
+        <div class="booking__media">
+          <iframe class="arch" title="Map: Tress Cafe, VIP Road, Zirakpur" src="https://maps.google.com/maps?q=Tress+Cafe+SCO+12+Block+B+High+Street+VIP+Road+Zirakpur&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>© Tress Cafe Salon, Zirakpur</span>
+      <span class="logo" aria-hidden="true">Tress Café</span>
+      <nav aria-label="Footer">
+        <a href="https://www.instagram.com/tresscafe_salon_zirakpur/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/www.Tresscafe/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Tress+Cafe+SCO+12+Block+B+High+Street+VIP+Road+Zirakpur" target="_blank" rel="noopener">Directions</a>
+      </nav>
+    </div>
+  </footer>
+
+  <div class="action-bar" aria-label="Quick booking">
+    <a href="tel:+919056650011">Call to book</a>
+    <a href="https://wa.me/919056650011" target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+
+  <script>
+    // Clone the review cards once so the CSS marquee can loop without a gap.
+    const track = document.querySelector('.reviews__track');
+    [...track.children].forEach(card => {
+      const copy = card.cloneNode(true);
+      copy.setAttribute('aria-hidden', 'true');
+      track.appendChild(copy);
+    });
+
+    // Fade sections in as they scroll into view.
+    const revealed = document.querySelectorAll('[data-reveal]');
+    if ('IntersectionObserver' in window) {
+      const io = new IntersectionObserver(entries => entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+      }), { rootMargin: '0px 0px -10% 0px' });
+      revealed.forEach(el => io.observe(el));
+    } else {
+      revealed.forEach(el => el.classList.add('is-in'));
+    }
+  </script>
+</body>
+</html>
